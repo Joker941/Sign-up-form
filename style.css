@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+
+:root {
+    --main-color-theme: rgba(255, 156, 50);
+}
+body {
+    font-family: 'Playfair Display', Serif;
+    margin: 0;
+    background-color: black;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 1000px;
+}
+
+.left_content {
+    background-image: url("./images/chris-ried-ieic5Tq8YMk-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 1000px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--main-color-theme);
+}
+
+.left_content h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: rgba(255, 156, 50, 0.209);
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    border-radius: 10px;
+}
+
+.right_content {
+    width: 60%;
+    background-color: #101010;
+}
+
+.text_presentation {
+    padding: 25px 50px 10px 50px;
+
+}
+.right_content p {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px var(--main-color-theme);
+}
+.formulaire {
+    width: 100%;
+}
+
+.form_labels h3 {
+    font-weight: bolder;
+    width: 100%;
+}
+.form_labels {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px;
+}
+
+form div {
+    width: 50%;
+}
+input[type="password"] {
+    border: 1px solid red;
+}
+.form_labels input {
+    box-shadow: inset 0 0 5px black;
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+}
+.form_labels input[type="text"], .form_labels input[type="email"] {
+    border: 1px solid black;
+}
+.form_labels input:hover {
+    border: 1px solid blue;
+}
+button {
+    background-color: var(--main-color-theme);
+    color: black;
+    border: none;
+    border-radius: 15px;
+    margin: 25px;
+    width: 150px;
+    height: 75px;
+    font-size: 25px;
+}
